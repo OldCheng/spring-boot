@@ -45,6 +45,29 @@
 <!--            <artifactId>nacos-config-spring-boot-actuator</artifactId>-->
 <!--            <version>0.2.1</version>-->
 <!--        </dependency>-->
+        <!-- jsp依赖 *****begin****** -->
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-jasper</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <!-- jsp依赖 ********end******-->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-dbcp2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+
+
+
     </dependencies>
 
     <build>

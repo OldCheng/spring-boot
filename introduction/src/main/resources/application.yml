@@ -4,3 +4,9 @@ nacos:
     file-extension: yaml
 server:
   port: 9999
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
