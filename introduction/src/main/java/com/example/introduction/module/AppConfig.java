@@ -24,7 +24,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
  */
 
 @Configuration
-@ComponentScan()
+@ComponentScan
 public class AppConfig {
 
     /**

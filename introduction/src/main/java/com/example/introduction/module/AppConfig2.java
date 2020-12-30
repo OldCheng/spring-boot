@@ -1,11 +1,6 @@
 
 package com.example.introduction.module;
 
-import com.example.introduction.module.entity.User;
-import com.example.introduction.module.service.PersonService;
-import com.example.introduction.module.service.TestService;
-import com.example.introduction.module.service.impl.PersonServiceImpl;
-import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
@@ -26,13 +21,8 @@ import org.springframework.context.annotation.Configuration;
  */
 
 @Configuration
-@ComponentScan(basePackages = "com.example.introduction.module.*"
-        //, excludeFilters = {@ComponentScan.Filter(classes = TestService.class)}
-        )
-public class AppConfig1 {
+@ComponentScan(basePackages = "com.example.introduction.module.*")
+public class AppConfig2 {
 
-        @Bean(initMethod = "init",destroyMethod = "destroy")
-        public static PersonService getPersonService() {
-                return new PersonServiceImpl();
-        }
+
 }

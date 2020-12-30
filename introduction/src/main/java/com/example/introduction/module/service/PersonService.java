@@ -7,6 +7,6 @@ package com.example.introduction.module.service;
  */
 public interface PersonService {
 
-    void printPerson();
-
+    public void init();
+    public void destroy();
 }

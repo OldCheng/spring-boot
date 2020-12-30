@@ -25,5 +25,8 @@ public class IocTest {
         TestService testService = applicationContext1.getBean(TestService.class);
         testService.printUser(new User());
 
+        AnnotationConfigApplicationContext applicationContext2 = new AnnotationConfigApplicationContext(AppConfig1.class);
+        applicationContext2.close();
+
     }
 }

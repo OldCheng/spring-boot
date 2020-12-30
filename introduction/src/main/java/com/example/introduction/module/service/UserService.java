@@ -1,5 +1,6 @@
 package com.example.introduction.module.service;
 
+import com.example.introduction.module.entity.User;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,6 +11,6 @@ import org.springframework.stereotype.Service;
 @Service
 public interface UserService {
 
-    void printPerson();
+    void printUser(User user);
 
 }
