@@ -36,7 +36,7 @@ public class IndexController {
 
         String sql = "select * from home_tab_info";
         List<Map<String, Object>> maps = jdbcTemplate.queryForList(sql);
-
+        System.out.println("--------query-----");
         return "HelloWorld";
     }
 

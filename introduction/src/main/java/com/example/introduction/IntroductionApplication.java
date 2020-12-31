@@ -9,8 +9,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-//@SpringBootApplication(scanBasePackages = {"com.example.introduction"})
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.example.introduction"})
+//@SpringBootApplication
 public class IntroductionApplication {
 //
 //    @Bean
