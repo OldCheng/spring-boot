@@ -11,6 +11,8 @@ import org.springframework.stereotype.Service;
 @Service
 public interface UserService {
 
-    void printUser(User user);
+    String printUser(User user);
+
+    User getUser();
 
 }

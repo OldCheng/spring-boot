@@ -28,7 +28,7 @@ public class IndexController {
 
     @RequestMapping("/index")
     public String index() {
-        return "HelloWorld";
+        return "index------HelloWorld";
     }
 
     @RequestMapping("/query")
@@ -37,7 +37,7 @@ public class IndexController {
         String sql = "select * from home_tab_info";
         List<Map<String, Object>> maps = jdbcTemplate.queryForList(sql);
         System.out.println("--------query-----");
-        return "HelloWorld";
+        return "query------HelloWorld";
     }
 
     @RequestMapping("/user")
@@ -48,7 +48,14 @@ public class IndexController {
         user.setNote("dmj");
         userService.printUser(user);
 
-        return "HelloWorld";
+        return "user------HelloWorld";
+    }
+
+    @RequestMapping("/getUser")
+    public User getUser() {
+
+
+        return userService.getUser();
     }
 
 

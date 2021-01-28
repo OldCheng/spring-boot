@@ -13,12 +13,23 @@ import org.springframework.stereotype.Service;
 @Service
 public class UserServiceImpl implements UserService {
     @Override
-    public void printUser(User user) {
+    public String printUser(User user) {
 
         System.out.println("--------进入方法---------");
         if(user == null){
             throw new RuntimeException("user 信息为空");
         }
         System.out.println(user);
+        return "name_user";
+    }
+
+    @Override
+    public User getUser() {
+
+        User user = new User();
+        user.setId(789L);
+        user.setUserName("zhangsan");
+        user.setNote("zzzzzsssss");
+        return user;
     }
 }

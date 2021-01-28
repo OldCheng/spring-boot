@@ -10,5 +10,9 @@ spring:
     password: Gree2020$
     url: jdbc:mysql://121.37.2.117:3406/ecommerce_manage?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=Asia/Shanghai&useSSL=false&autoReconnect=true&failOverReadOnly=false&maxReconnects=10&allowMultiQueries=true&useAffectedRows=true&autoReconnectForPools=true
     username: root
+  security:
+    user:
+      name: myuser
+      password: 123456
 
 
