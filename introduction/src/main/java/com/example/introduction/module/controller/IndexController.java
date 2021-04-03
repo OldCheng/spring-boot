@@ -4,7 +4,6 @@ import com.example.introduction.module.entity.User;
 import com.example.introduction.module.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -34,7 +33,7 @@ public class IndexController {
     @RequestMapping("/query")
     public String query() {
 
-        String sql = "select * from home_tab_info";
+        String sql = "select * from student";
         List<Map<String, Object>> maps = jdbcTemplate.queryForList(sql);
         System.out.println("--------query-----");
         return "query------HelloWorld";

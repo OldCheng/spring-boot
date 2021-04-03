@@ -1,8 +1,6 @@
 package com.example.introduction;
 
-import com.example.introduction.module.entity.User;
-import com.example.introduction.module.service.UserService;
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -15,16 +13,16 @@ import javax.annotation.Resource;
 @SpringBootTest
 class IntroductionApplicationTests {
 
-    @Autowired
-    UserService userService;
-
-
-    @Test
-    void contextLoads() {
+//    @Autowired
+//    UserService userService;
 //
-//        TestRestTemplate testRestTemplate = new TestRestTemplate();
-//        User u  = testRestTemplate.getForObject("/getUser",User.class);
-        User user = userService.getUser();
-    }
+//
+//    @Test
+//    void contextLoads() {
+////
+////        TestRestTemplate testRestTemplate = new TestRestTemplate();
+////        User u  = testRestTemplate.getForObject("/getUser",User.class);
+//        User user = userService.getUser();
+//    }
 
 }

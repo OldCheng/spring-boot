@@ -1,10 +1,13 @@
 package com.example.introduction.module.entity;
 
+import org.springframework.stereotype.Component;
+
 /**
  * @Author 程杰
  * @Date 2020/12/28 19:26
  * @Version 1.0
  */
+@Component
 public class User {
     private Long id ;
     private String userName;
